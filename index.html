@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.box {
+			width: 100%;
+			height: 100%;
+      margin-left: 100px;
+      margin-top: 30px;
+      overflow: hidden;
+		}
+		.first {
+			background-color: #96d9de;
+		}
+		.two {
+			background: #afe9d8;
+		}
+		.three {
+			background-color: #e1c0d0;
+		}
+		.four {
+			background-color: #e6daba;
+		}
+
+		.cardBox p {
+			width: 460px;
+			padding-left: 15px;
+			margin-top: 15px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.wrapper li {
+			padding-left: 15px;
+			margin-top: 15px;
+		}
+		.ulWraper {
+			float: left;
+		}
+		.cardBox {
+			border: 2px dotted bisque;
+			float: left;
+		}
+		.btn {
+			height: 34px;
+			border-radius: 15px;
+			line-height: 35px;
+			text-align: center;
+			color: #fff;
+			background-color: #009a61;
+			border-color: #008151;
+			cursor: pointer;
+		}
+		.right {
+			color: green;
+			font-weight: bolder;
+		}
+		.wrong {
+			color: red;
+			font-weight: bolder;
+		}
+		.text {
+			width: 15px;
+		}
+    .table {
+      float: left;
+    }
+    .thead {
+      width: 200px;
+      height: 100px;
+      text-align: center;
+    }
+    .wrapper {
+      width: 300px;
+      height: 300px;
+    }
+    .edit {
+      text-indent: 40px;
+      width: 800px;
+      font-size: 20px;
+    }
+	</style>
+	<body>
+		<div class="box">
+      <div class="edit">
+        Let’s now take an example of one of the most famous automobile companies in Germany, BMW.  Here are various costs incurred in BMW. Try to distinguish them into corresponding cost types. Let’s say the cost object is all BMW 4 Series Coupé produced.
+      </div>
+			<table border="1" class="table" cellspacing="0" cellpadding="0" >
+				<tr>
+					<td></td>
+					<td class="thead">Direct costs</td>
+					<td  class="thead">Indirect costs</td>
+				</tr>
+				<tr>
+					<td  class="thead">Variable costs</td>
+					<td class="wrapper first" data-index="1"></td>
+					<td class="wrapper two" data-index="2"></td>
+				</tr>
+				<tr>
+					<td  class="thead">Fixed costs</td>
+					<td class="wrapper three" data-index="3"></td>
+					<td class="wrapper four" data-index="4"></td>
+				</tr>
+			</table>
+
+			<div class="cardBox" ">
+        <!--  -->
+				<p>待分配内容</p>
+				<p class="drag" draggable="true" data-index="1">
+					Costs of steel for the BMW 4 Series Coupé
+				</p>
+				<p class="drag" draggable="true" data-index="2">
+					Costs of steel for the BMW 4 Series Coupé
+				</p>
+				<p class="drag" draggable="true" data-index="3">
+					Costs of steel for the BMW 4 Series Coupé
+        </p>
+        
+				<p class="drag" draggable="true" data-index="1">
+					Salary of the plant manager of BMW Group Plant Dingolfing who oversees
+					the production of BMW 4 Series Coupé and many other car models.
+        </p>
+				<p class="drag" draggable="true" data-index="2">
+					Salary of the plant manager of BMW Group Plant Dingolfing who oversees
+					the production of BMW 4 Series Coupé and many other car models.
+        </p>
+				<p class="drag" draggable="true" data-index="3">
+					Salary of the plant manager of BMW Group Plant Dingolfing who oversees
+					the production of BMW 4 Series Coupé and many other car models.
+        </p>
+				<p class="drag" draggable="true" data-index="4">
+					Salary of the plant manager of BMW Group Plant Dingolfing who oversees
+					the production of BMW 4 Series Coupé and many other car models.
+        </p>
+        
+				<!-- <p class="btn">submit</p> -->
+			</div>
+		</div>
+	</body>
+</html>
