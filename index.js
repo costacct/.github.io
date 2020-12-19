@@ -30,7 +30,7 @@ $(function() {
 	/* 拖拽容器 */
 	$(".wrapper").on("drop", function(ev) {
 		ev.preventDefault()
-		console.log(ev)
+		// console.log(ev)
 		// return false
 		let selfIndex = $(this).attr("data-index")
 		console.log(ev.originalEvent.dataTransfer.getData("val"), "测试")
@@ -61,8 +61,7 @@ $(function() {
     $(currentTag).children().remove()
 	})
 	$(".wrapper").on("dragenter", function(ev) {
-		// console.log(this)
 		ev.preventDefault()
-		console.log("拖动进入容器事件", "dragenter")
+		// console.log("拖动进入容器事件", "dragenter")
 	})
 })
