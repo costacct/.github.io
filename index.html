@@ -2,188 +2,189 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="./index.js"></script>
 </head>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-  .box {
-    width: 100%;
-    height: 100%;
-    margin-left: 100px;
-    margin-top: 30px;
-    overflow: hidden;
-  }
+    .box {
+        width: 100%;
+        height: 100%;
+        margin-left: 100px;
+        margin-top: 30px;
+        overflow: hidden;
+    }
 
-  .upperLeft {
-    background-color: #fbe5d7;
-  }
+    .upperLeft {
+        background-color: #fbe5d7;
+    }
 
-  .upperRight {
-    background-color: #fff2cf;
-  }
+    .upperRight {
+        background-color: #fff2cf;
+    }
 
-  .lowerLeft {
-    background-color: #dae3f2;
-  }
+    .lowerLeft {
+        background-color: #dae3f2;
+    }
 
-  .lowerRight {
-    background-color: #daf0f9;
-  }
+    .lowerRight {
+        background-color: #daf0f9;
+    }
 
-  .cardBox p {
-    width: 460px;
-    padding-left: 15px;
-    margin-top: 15px;
-  }
+    .cardBox p {
+        width: 460px;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
 
-  .wrapper li {
-    padding-left: 15px;
-    margin-top: 15px;
-  }
+    .wrapper li {
+        padding-left: 15px;
+        margin-top: 15px;
+    }
 
-  .wrapper li :hover {
-    cursor: pointer;
-  }
+    .wrapper li :hover {
+        cursor: pointer;
+    }
 
-  .wrapper p {
-    padding-left: 15px;
-    margin-top: 15px;
-  }
+    .wrapper p {
+        padding-left: 15px;
+        margin-top: 15px;
+    }
 
-  .wrapper p :hover {
-    cursor: pointer;
-  }
+    .wrapper p :hover {
+        cursor: pointer;
+    }
 
-  .ulWraper {
-    float: left;
-  }
+    .ulWraper {
+        float: left;
+    }
 
-  .cardBox {
-    border: 4px solid #0343A8;
-    margin-left: 50px;
-    float: left;
-  }
+    .cardBox {
+        border: 4px solid #0343A8;
+        margin-left: 50px;
+        float: left;
+    }
 
-  .right {
-    color: green;
-    font-weight: bolder;
-  }
+    .right {
+        color: green;
+        font-weight: bolder;
+    }
 
-  .wrong {
-    color: red;
-    font-weight: bolder;
-  }
+    .wrong {
+        color: red;
+        font-weight: bolder;
+    }
 
-  .text {
-    width: 15px;
-  }
+    .text {
+        width: 15px;
+    }
 
-  .table {
-    float: left;
-    
-  }
+    .table {
+        float: left;
 
-  .thead {
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-  }
+    }
 
-  .wrapper {
-    width: 330px;
-    height: 300px;
-  }
+    .thead {
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
 
-  .edit {
-    text-indent: 40px;
-    width: 780px;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
+    .wrapper {
+        width: 330px;
+        height: 300px;
+    }
 
-  p:hover {
-    cursor: pointer;
-  }
+    .edit {
+        text-indent: 40px;
+        width: 780px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    p:hover {
+        cursor: pointer;
+    }
 </style>
 
 <body>
-  <div class="box">
-    <div class="edit">
-      Let’s now take an example of one of the most famous automobile companies
-      in Germany, BMW. Here are various costs incurred in BMW. Try to
-      distinguish them into corresponding cost types. Let’s say the cost
-      object is all BMW 4 Series Coupé produced.
-    </div>
-    <table border="1" class="table" cellspacing="0" cellpadding="0">
-      <tr>
-        <td></td>
-        <td class="thead">Direct costs</td>
-        <td class="thead">Indirect costs</td>
-      </tr>
-      <tr>
-        <td class="thead">Variable costs</td>
-        <td class="wrapper upperLeft" data-index="1"></td>
-        <td class="wrapper upperRight" data-index="2"></td>
-      </tr>
-      <tr>
-        <td class="thead">Fixed costs</td>
-        <td class="wrapper lowerLeft" data-index="3"></td>
-        <td class="wrapper lowerRight" data-index="4"></td>
-      </tr>
-    </table>
+<div class="box">
+  <div class="edit">
+    Let’s now take an example of one of the most famous automobile companies
+    in Germany, BMW. Here are various costs incurred in BMW. Try to
+    distinguish them into corresponding cost types. Let’s say the cost
+    object is all BMW 4 Series Coupé produced.
+  </div>
+  <table border="1" class="table" cellspacing="0" cellpadding="0">
+    <tr>
+      <td></td>
+      <td class="thead">Direct costs</td>
+      <td class="thead">Indirect costs</td>
+    </tr>
+    <tr>
+      <td class="thead">Variable costs</td>
+      <td class="wrapper upperLeft" data-index="1"></td>
+      <td class="wrapper upperRight" data-index="2"></td>
+    </tr>
+    <tr>
+      <td class="thead">Fixed costs</td>
+      <td class="wrapper lowerLeft" data-index="3"></td>
+      <td class="wrapper lowerRight" data-index="4"></td>
+    </tr>
+  </table>
 
-    <div class="cardBox" ">
-			<h2>To be dragged:</h2>
-		        <p class=" drag" draggable="true" data-index="4">
+  <div class="cardBox">
+    <h2>To be dragged:</h2>
+    <p class=" drag" draggable="true" data-index="4">
       Depreciation of the BMW Headquarter
-      </p>
-      <p class="drag" draggable="true" data-index="1">
-        Costs of steel for the BMW 4 Series Coupé
-      </p>
-      <p class="drag" draggable="true" data-index="1">
-        Salary of temporary workers which are only involved in the assembly of
-        BMW 4 Series Coupé
-      </p>
-      <p class="drag" draggable="true" data-index="2">
-        Electricity costs at the BMW Group Plant Dingolfing which produces BMW 4
-        Series Coupé and many other car models.
-      </p>
-      <p class="drag" draggable="true" data-index="4">
-        Annual license fees for software such as CATIA
-      </p>
-      <p class="drag" draggable="true" data-index="3">
-        Salary of manager that is responsible for the production of BMW 4 Series
-        Coupé only
-      </p>
-      <p class="drag" draggable="true" data-index="1">
-        Costs of steering wheels for the BMW 4 Series Coupé
-      </p>
-      <p class="drag" draggable="true" data-index="3">
-        Depreciation of the machinery and manufacturing equipment which is only
-        used for producing the BMW 4 Series Coupé
-      </p>
-      <p class="drag" draggable="true" data-index="2">
-        Maintenance costs for the BMW Group Plant Dingolfing which produces BMW
-        4 Series Coupé and many other car models.
-      </p>
-      <p class="drag" draggable="true" data-index="4">
-        Salary of the plant manager of BMW Group Plant Dingolfing who oversees
-        the production of BMW 4 Series Coupé and many other car models
-      </p>
-      <p class="drag" draggable="true" data-index="1">
-        Cost of paint for for the BMW 4 Series Coupé
-      </p>
-    </div>
+    </p>
+    <p class="drag" draggable="true" data-index="1">
+      Costs of steel for the BMW 4 Series Coupé
+    </p>
+    <p class="drag" draggable="true" data-index="1">
+      Salary of temporary workers which are only involved in the assembly of
+      BMW 4 Series Coupé
+    </p>
+    <p class="drag" draggable="true" data-index="2">
+      Electricity costs at the BMW Group Plant Dingolfing which produces BMW 4
+      Series Coupé and many other car models.
+    </p>
+    <p class="drag" draggable="true" data-index="4">
+      Annual license fees for software such as CATIA
+    </p>
+    <p class="drag" draggable="true" data-index="3">
+      Salary of manager that is responsible for the production of BMW 4 Series
+      Coupé only
+    </p>
+    <p class="drag" draggable="true" data-index="1">
+      Costs of steering wheels for the BMW 4 Series Coupé
+    </p>
+    <p class="drag" draggable="true" data-index="3">
+      Depreciation of the machinery and manufacturing equipment which is only
+      used for producing the BMW 4 Series Coupé
+    </p>
+    <p class="drag" draggable="true" data-index="2">
+      Maintenance costs for the BMW Group Plant Dingolfing which produces BMW
+      4 Series Coupé and many other car models.
+    </p>
+    <p class="drag" draggable="true" data-index="4">
+      Salary of the plant manager of BMW Group Plant Dingolfing who oversees
+      the production of BMW 4 Series Coupé and many other car models
+    </p>
+    <p class="drag" draggable="true" data-index="1">
+      Cost of paint for for the BMW 4 Series Coupé
+    </p>
+  </div>
+</div>
 </body>
 
 </html>
