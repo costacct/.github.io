@@ -4,12 +4,15 @@ $(function() {
 
   /* 被拖拽的元素 */
   $(".drag").on("dragstart",function (ev) {
+    console.log(ev.target, 'target')
+    let isBold = $(ev.target).hasClass('bold')
     $(this).children().remove()
     ev.originalEvent.dataTransfer.setData(
       "val",
       JSON.stringify({
         htmlString: $(ev.target).html(),
-        dataIndex: $(ev.target).attr("data-index")
+        dataIndex: $(ev.target).attr("data-index"),
+        isBold:isBold
       })
     )
     currentTag = ev.target
@@ -32,8 +35,7 @@ $(function() {
     let oli = ""
 
     data.dataIndex == selfIndex ? isFixedSort = true : isFixedSort = false
-
-    oli = $(`<li class="drag" draggable= ${!isFixedSort ? 'true' : 'false'} data-index = ${data.dataIndex}>
+    oli = $(`<li class="drag + ${data.isBold?'bold' : ''}"  draggable= ${!isFixedSort ? 'true' : 'false'} data-index = ${data.dataIndex}>
       ${data["htmlString"]}
      <span class = ${isFixedSort ? 'true' : 'wrong'}>  ${isFixedSort ? 'TRUE' : 'FALSE'} </span>
      </li>`)

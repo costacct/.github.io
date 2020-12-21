@@ -26,13 +26,13 @@ html {
 }
 
 .box .top {
-    width: 100%;
-    height: 130px;
+    width: 800px;
+    height: 140px;
 }
 
 .box .top .left {
     float: left;
-    width: 50%;
+    width: 75%;
 }
 
 .box .top .right {
@@ -44,6 +44,10 @@ html {
 
 .cardBox > li {
     margin-top: 20px;
+    display: flex;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
+    /*justify-content: space-evenly;*/
 }
 
 .cardBox > li > span {
@@ -62,15 +66,17 @@ html {
 }
 
 .bottom .left {
-    width: 50%;
+    width: 40%;
     height: 100%;
+    margin-right: 30px;
     float: left;
 }
 
 .bottom .right {
-    width: 50%;
+    /*width: 50%;*/
     /*height: 570px;*/
     float: left;
+    margin-top: -100px;
 }
 
 /*.right > table {*/
@@ -111,6 +117,7 @@ html {
 
 .container {
     width: 600px;
+
 }
 
 .true {
@@ -143,10 +150,11 @@ html {
 .symbol {
     text-align: center;
     width: 20px;
-    border-right: none;
+    border: 1px solid black;
     font-size: 20px;
     font-weight: 900;
     vertical-align: middle;
+
 }
 
 .trash {
@@ -211,3 +219,11 @@ html {
     overflow-y: scroll;
 }
 
+.title {
+    text-align: center;
+    /* height: 60px; */
+    /* width: 300px; */
+    /*line-height: 44px;*/
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
