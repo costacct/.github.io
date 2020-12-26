@@ -2,7 +2,7 @@ $(function() {
   let currentTag = ""
   let isFixedSort = false
 
-  /* elements to be dragged into income statement*/
+  /* create elements to be dragged into income statement table*/
   $(".drag").on("dragstart",function (ev) {
     let isBold = $(ev.target).hasClass('bold')
     $(this).children().remove()
@@ -18,26 +18,25 @@ $(function() {
   })
 
   $(".container").on("dragover", function(ev) {
-    ev.preventDefault() // 清除默认事件
+    ev.preventDefault() // clear default events
   })
   /* drag event ends */
   $(".drag").on("dragend", function(ev) {
     ev.preventDefault()
   })
 
-  /* container */
+  /* container = income statement table */
   $(".container").on("drop", function(ev) {
     ev.preventDefault()
     let selfIndex = $(this).attr("data-index")
-    let data = JSON.parse(ev.originalEvent.dataTransfer.getData("val"))  // 序列化解析
+    let data = JSON.parse(ev.originalEvent.dataTransfer.getData("val"))  
     let oli = ""
 
     data.dataIndex == selfIndex ? isFixedSort = true : isFixedSort = false
     oli = $(`<li class="drag + ${data.isBold?'bold' : ''}"  draggable= ${!isFixedSort ? 'true' : 'false'} data-index = ${data.dataIndex}>
       ${data["htmlString"]}
      <span class = ${isFixedSort ? 'true' : 'wrong'}>  ${isFixedSort ? 'TRUE' : 'FALSE'} </span>
-     </li>`)
-    //  动态追加的元素 追加的事件 需要采用事件委托 或者 重新 执行事件
+     </li>`) // add into income statement
     $(oli).on("dragstart", function(ev)  {
       let isBold = $(ev.target).hasClass('bold')
       $(this).children('span').remove()
@@ -51,7 +50,7 @@ $(function() {
       )
       currentTag = ev.target
     })
-    // 放到格子里
+    // put into income statement table
     $(this).append($(oli))
 
     /* delete original elements */

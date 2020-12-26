@@ -2,7 +2,7 @@ $(function() {
 	let currentTag = ""
 	let isFixedSort = false
 
-	/* 被拖拽的元素 */
+	/* elements to be dragged */
 	$(".drag").on("dragstart",function (ev) {
     $(this).children().remove()
 		ev.originalEvent.dataTransfer.setData(
@@ -18,12 +18,12 @@ $(function() {
 	$(".wrapper").on("dragover", function(ev) {
 		ev.preventDefault()
 	})
-	/* 拖动结束事件 */
+	/* drag ends */
 	$(".drag").on("dragend", function(ev) {
 		ev.preventDefault()
 	})
 
-	/* 拖拽容器 */
+	/* container = colored areas */
 	$(".wrapper").on("drop", function(ev) {
 		ev.preventDefault()
 		let selfIndex = $(this).attr("data-index")
@@ -49,12 +49,11 @@ $(function() {
 		})
 		$(this).append($(oli))
 
-		/* 删除掉原来的元素 */
+		/* delete original elements */
     $(currentTag).remove()
     $(currentTag).children().remove()
 	})
 	$(".wrapper").on("dragenter", function(ev) {
 		ev.preventDefault()
-		// console.log("拖动进入容器事件", "dragenter")
 	})
 })
