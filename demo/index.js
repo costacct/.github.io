@@ -2,9 +2,9 @@ $(function() {
   let currentTag = ""
   let isFixedSort = false
 
-  /* 被拖拽的元素 */
+  /* elements to be dragged into income statement*/
   $(".drag").on("dragstart",function (ev) {
-    console.log(ev.target, 'target')
+    //console.log(ev.target, 'target')
     let isBold = $(ev.target).hasClass('bold')
     $(this).children().remove()
     ev.originalEvent.dataTransfer.setData(
@@ -21,16 +21,16 @@ $(function() {
   $(".container").on("dragover", function(ev) {
     ev.preventDefault()
   })
-  /* 拖动结束事件 */
+  /* drag event ends */
   $(".drag").on("dragend", function(ev) {
     ev.preventDefault()
   })
 
-  /* 拖拽容器 */
+  /* container */
   $(".container").on("drop", function(ev) {
     ev.preventDefault()
     let selfIndex = $(this).attr("data-index")
-    console.log(ev.originalEvent.dataTransfer.getData("val"), "测试")
+    console.log(ev.originalEvent.dataTransfer.getData("val"), "test")
     let data = JSON.parse(ev.originalEvent.dataTransfer.getData("val"))
     let oli = ""
 
@@ -53,7 +53,7 @@ $(function() {
     })
     $(this).append($(oli))
 
-    /* 删除掉原来的元素 */
+    /* delete original elements */
     $(currentTag).remove()
     $(currentTag).children().remove()
   })
