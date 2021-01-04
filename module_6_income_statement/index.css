@@ -116,7 +116,7 @@ html {
 }
 
 .container {
-    width: 550px;
+    width: 500px;
 
 }
 
@@ -159,7 +159,7 @@ html {
 
 .trash {
     /*margin-top: 10px;*/
-    width: 550px;
+    width: 520px;
     height: 200px;
     border: 1px solid brown;
     overflow-y: scroll;
