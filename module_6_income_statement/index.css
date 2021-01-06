@@ -43,15 +43,15 @@ html {
 }
 
 .cardBox {
-  min-width: 600px;
+  min-width: 400px;
   min-height: 680px;
 }
 .cardBox > li {
     margin-top: 20px;
     display: flex;
-    /*justify-content: space-around;*/
-    justify-content: space-between;
-    /*justify-content: space-evenly;*/
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
 }
 
 .cardBox > li > span {
