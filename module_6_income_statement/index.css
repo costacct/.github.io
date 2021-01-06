@@ -43,7 +43,7 @@ html {
 }
 
 .cardBox {
-  min-width: 400px;
+  min-width: 500px;
   min-height: 680px;
 }
 .cardBox > li {
