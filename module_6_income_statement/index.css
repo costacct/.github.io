@@ -42,6 +42,10 @@ html {
     float: left;
 }
 
+.cardBox {
+  min-width: 600px;
+  min-height: 680px;
+}
 .cardBox > li {
     margin-top: 20px;
     display: flex;
