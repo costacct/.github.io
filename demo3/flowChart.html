@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .base {
+            width: 100px;
+            height: 80px;
+            border-radius: 15px;
+            box-sizing: border-box;
+        }
+        .base_line_height {
+            display: block;
+            height: 1px;
+            background: black;
+        }
+        .base_line_weight {
+            display: block;
+            width: 1px;
+            background: black;
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 980px;
+            margin-left: 50px;
+            border: 1px solid lightskyblue;
+        }
+        .root {
+            width: 130px;
+            height: 75px;
+            box-sizing: border-box;
+            padding: 10px;
+            position: absolute;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            top: 50%;
+            margin-top:  -50px;
+            border-radius: 15px;
+            background: #0559CA;
+        }
+        .root_line {
+            display: block;
+            width: 15px;
+            height: 1px;
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            background: black;
+        }
+        /* 三角*/
+        .arrow {
+            width: 0;
+            height: 0;
+            border-bottom: 15px solid rgba(0,0,0,.8);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            transform: rotate(90deg);
+        }
+
+        .child_1_top {
+            position: absolute;
+            margin-left: 200px;
+            margin-top: 195px;
+            color: #A9E9EB;
+            padding: 10px;
+            background: #219EE1;
+        }
+        .child_1_top_line {
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            display: block;
+            width: 15px;
+        }
+        .child_1_top_arrow {
+            position: absolute;
+            transform: rotate(90deg);
+            top: 32px;
+            left: -13px;
+        }
+        .child_1_top_line1 {
+            position: absolute;
+            height: 200px;
+            top: 40px;
+            left: -30px;
+        }
+        .child_1_top_line2 {
+            position: absolute;
+            height: 200px;
+            top: -160px;
+            left: -30px;
+        }
+        .child_1_bottom {
+            margin-left: 200px;
+            position: relative;
+            top: 695px;
+            color: #A9E9EB;
+            padding: 10px;
+            background: #219EE1;
+        }
+        .tip {
+            position: absolute;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 80px;
+            right: -80px;
+            top: 0px;
+            background: #fff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="root">
+            Product and service costing
+            <i class="root_line"></i>
+            <div class="tip"> Program types</div>
+        </div>
+
+        <div class="base child_1_top">
+            Job shop
+            production
+            <i class="base_line_height child_1_top_line"></i>
+            <i class="arrow child_1_top_arrow"></i>
+            <div class="base_line_weight child_1_top_line1">
+            </div>
+        </div>
+        <div class="base child_1_bottom">
+            Job shop production
+            <i class="base_line_height child_1_top_line"></i>
+            <i class="arrow child_1_top_arrow"></i>
+            <div class="base_line_weight child_1_top_line2">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
