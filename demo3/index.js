@@ -34,7 +34,7 @@ $(function() {
 
 
     if (idx === data.index) {
-      oli = `<li class="drag" data-index="${data.index}"  style="color: greenyellow">${data.htmlString}</li>`
+      oli = `<li class="drag" data-index="${data.index}"  style="color: #008A00">${data.htmlString}</li>`
 
     } else {
       oli = `<li class="drag wrap" data-index="${data.index}" draggable="true" style="color: red">${data.htmlString}</li>`
