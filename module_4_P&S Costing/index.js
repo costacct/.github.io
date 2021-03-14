@@ -33,7 +33,7 @@ $(function() {
     let oli = ""
 
     data.dataIndex == selfIndex ? isFixedSort = true : isFixedSort = false
-    oli = $(`<span class="drag" style="color: ${isFixedSort ? 'green' : 'red'}"  draggable= ${!isFixedSort ? 'true' : 'false'} data-index = ${data.dataIndex}>
+    oli = $(`<span class="drag" style="color: ${isFixedSort ? '#008A00' : 'red'}"  draggable= ${!isFixedSort ? 'true' : 'false'} data-index = ${data.dataIndex}>
       ${data["htmlString"]}
      </span>`) // add into income statement
     $(oli).on("dragstart", function(ev)  {
