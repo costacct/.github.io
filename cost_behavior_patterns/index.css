@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.box .top {
+    width: 800px;
+    height: 140px;
+}
+
+.box .top .left {
+    float: left;
+    width: 75%;
+}
+
+.box .top .right {
+    width: 50%;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+}
+
+.cardBox {
+  min-width: 500px;
+  min-height: 680px;
+}
+.cardBox > li {
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+
+.cardBox > li > span {
+    display: inline-block;
+    height: 90px;
+    line-height: 15px;
+    padding: 3px;
+    border-radius: 5px;
+    background: #fffdfd;
+}
+
+.bottom {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+.bottom .left {
+    width: 40%;
+    height: 100%;
+    margin-right: 30px;
+    float: left;
+}
+
+.bottom .right {
+    /*width: 50%;*/
+    /*height: 570px;*/
+    float: left;
+    margin-top: -100px;
+}
+
+/*.right > table {*/
+/*    width: 50%;*/
+/*}*/
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+
+.table tr {
+    width: 800px;
+    padding: 3px;
+    vertical-align: top;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container li {
+    /*display: inline-block;*/
+    /*display: inline-block;*/
+    margin-left: 5px;
+    /*width: 400px;*/
+    max-width: 500px;
+    height: 140px;
+    line-height: 15px;
+    padding: 3px;
+    border-radius: 5px;
+    background: #fffdfd;
+    margin-top: 10px;
+}
+
+.container {
+    width: 450px;
+
+}
+
+.true {
+    color: green;
+    /*float: right;*/
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.wrong {
+    margin-left: 10px;
+    color: red;
+    font-weight: bolder;
+}
+
+.container li .true {
+    color: green;
+    float: right;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.container li .wrong {
+    color: red;
+    float: right;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.symbol {
+    text-align: center;
+    width: 200px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 900;
+    vertical-align: middle;
+
+}
+
+.containers1 {
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.containers2 {
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.containers3 {
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.containers4 {
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.containers5 {
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.containers6 {
+    display: block;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+
+.title {
+    text-align: center;
+    /* height: 60px; */
+    /* width: 300px; */
+    /*line-height: 44px;*/
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
