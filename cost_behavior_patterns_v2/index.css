@@ -58,8 +58,8 @@ html {
     display: inline-block;
     height: 105px;
     line-height: 15px;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .bottom {
