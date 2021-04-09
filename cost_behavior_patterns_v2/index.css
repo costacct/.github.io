@@ -56,10 +56,10 @@ html {
 
 .cardBox > li > span {
     display: inline-block;
-    height: 90px;
+    height: 100px;
     line-height: 15px;
-    padding: 3px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 15px;
     background: #ffffff;
 }
 
