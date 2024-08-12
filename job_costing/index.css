@@ -35,12 +35,12 @@ html {
     width: 75%;
 }
 
-.box .top .right {
+/*.box .top .right {
     width: 50%;
     text-align: center;
     line-height: 40px;
     float: left;
-}
+}*/
 
 .cardBox {
   min-width: 500px;
@@ -80,7 +80,7 @@ html {
     /*width: 50%;*/
     /*height: 570px;*/
     float: left;
-    margin-top: -80px;
+    /*margin-top: -80px;*/
 }
 
 /*.right > table {*/
